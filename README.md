@@ -1,2 +1,2 @@
 # ftims-wspolbiezne
-Labolatoria
+Laboratoria
