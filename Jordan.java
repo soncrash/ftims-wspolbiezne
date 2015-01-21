@@ -18,15 +18,14 @@ public class Jordan implements Runnable {
 	
 	@Override
 	public void run() {
-        for(int r = beginIndex; r < endIndex; r++) {
-        	if(r == currentRow) {
+        for(int i = beginIndex; i < endIndex; i++) {
+        	if(i == currentRow) {
         		continue;
         	}
-            double w = matrix[r][currentRow];
+            double w = matrix[i][currentRow];
         	for(int c = 0; c < columns+1; c++) {
-        		matrix[r][c] -= matrix[currentRow][c] * w;
+        		matrix[i][c] -= matrix[currentRow][c] * w;
         	}
         }
 	}
-
 }
